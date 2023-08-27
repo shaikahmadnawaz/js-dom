@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Click Event</title>
+  </head>
+  <body>
+    <button id="myButton">Click Me</button>
+
+    <script>
+      const button = document.getElementById("myButton");
+
+      function handleClick() {
+        console.log("Button clicked!");
+      }
+
+      button.addEventListener("click", handleClick);
+
+      // To remove the event listener
+      button.removeEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

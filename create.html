@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic List Example</title>
+  </head>
+  <body>
+    <ul id="myList"></ul>
+    <script>
+      const data = ["Apple", "Banana", "Cherry", "Date"];
+
+      const myList = document.getElementById("myList");
+
+      data.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        myList.appendChild(listItem);
+      });
+    </script>
+  </body>
+</html>

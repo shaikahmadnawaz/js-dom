@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit & Delete | DOM</title>
+  </head>
+  <body>
+    <h1>Manipulating the DOM with JavaScript</h1>
+    <p>
+      In this example, we'll explore how to dynamically add, edit, and remove
+      elements from the DOM using JavaScript.
+    </p>
+
+    <!-- Initial list of programming languages -->
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+
+    <script>
+      function addLanguage(langName) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
+      }
+      addLanguage("TypeScript");
+
+      // Editing the second language
+      const secondLang = document.querySelector("li:nth-child(2)");
+      const newLi = document.createElement("li");
+      newLi.textContent = "Go";
+      secondLang.replaceWith(newLi);
+
+      // Deleting the last language
+      const lastLang = document.querySelector("li:last-child");
+      lastLang.remove();
+    </script>
+  </body>
+</html>

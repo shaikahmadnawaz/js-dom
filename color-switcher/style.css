@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: 1;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#red {
+  background-color: #ff6b6b;
+}
+#green {
+  background-color: #66cc99;
+}
+#blue {
+  background-color: #6fa3ef;
+}
